@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    padding: 1rem;
+    display: grid;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.8);
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "aside-left"
+    "main"
+    "aside-right"
+    "aside-bottom"
+    "footer"
+}
+
+.header {
+    background-image: url(/img/bakgrund-header.jpg); 
+    grid-area: header;
+    border: 1px solid black;
+ }
+ 
+ .main {
+     
+     grid-area: main;
+     border: 1px solid black;
+ }
+ 
+ .aside-left {
+     
+     grid-area: aside-left;
+     border: 1px solid black;
+ }
+ 
+ .aside-right {
+     
+     grid-area: aside-right;
+     border: 1px solid black;
+ }
+ .aside-bottom {
+    grid-area: aside-bottom;
+    border: 1px solid black;
+ }
+ .footer {
+     grid-area: footer;
+     border: 1px solid black;
+ }
+
+ .menu-items {
+     display: flex;
+     justify-content: flex-start;
+     margin-left: -450%
+ }
+
+a, li{
+    text-decoration: none;
+    font-weight: 500;
+    
+}
+
+ .menu-item {
+     list-style-type: none;
+     padding: 0.5rem;
+     border: 1px solid white;
+     height: 3%;
+     margin: 10px;
+     border-radius:3px;
+     background: white;
+ }
+
+ .navbar {
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+
+ .navbar li a:hover{
+     color: green;
+ }
+ .headtext {
+     grid-area: 1 / 2;
+     text-align: center;
+     padding: 5rem;
+     color: white;
+ }
+
+ .headbtn {
+   grid-area: 2 / 2;
+   margin-bottom: 10%;
+   width: 40%;
+   margin: auto;
+   margin-top: -25%;
+   border-radius: 5px;
+   background-color: orange;
+   color: white;
+   padding: 10px 8px;
+ }
+.aside-l {
+    display: grid;
+    padding: 2%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.searchbar-mid {
+    grid-area: 1 /2;
+    border-radius: 3px;
+    border-color: transparent;
+}
+.btn-mid {
+    grid-area: 1 / 3;
+    width: 30%;
+    padding: 2%;
+   
+    
+}
+
+.text-mid {
+    padding: 20px;
+    grid-area: 1 / 3;
+    margin-left: -50%;
+    font-size: 25px;
+}
+
+
+
+.mid-contain {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.box1 { 
+    grid-area: 2/ 2;
+    text-align: center;
+    margin-right: 10%;
+}
+
+
+.mid-pic {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.mid-pic1{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.mid-text {
+    font-size: 20px;
+}
+
+.box2 {
+    grid-area: 2 / 3;
+    text-align: center;
+    margin-right: 10%;
+}
+
+.box3 {
+    grid-area: 3 / 2;
+    text-align: center;
+    margin-right: 10%;
+}
+
+.box4 {
+    grid-area: 3 / 3;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.right-contain {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+}
+.right-pic {
+    width: 80%;
+    border-radius: 30px;
+}
+
+.box-right1 {
+    grid-area: 1 / 2;
+    text-align: center;
+    
+}
+.menu-items1{
+    display: flex;
+     justify-content: center;
+}
+
+
+.menu-item1 {
+    list-style-type: none;
+     padding: 0.5rem;
+     border: 1px solid white;
+     height: 6%;
+     margin: 10px;
+     border-radius:3px;
+     background: white;
+}
+
+@media only screen and (min-width: 800px){
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    "header header header header header header"
+    "aside-left aside-left main main aside-right aside-right"
+    " aside-bottom aside-bottom footer footer footer footer"
+}
+.menu-items {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -40%
+}
+
+.aside-left{
+    background-color: lightblue;
+}
+
+.footer {
+    background-color: lightblue;
+}
+
+.menu-item1 {
+    background: whitesmoke;
+    margin: auto;
+}
+
+.mid-pic {
+    width: 110%;
+}
+.mid-pic1 {
+    width: 110%;
+}
+.aside-right{
+    background-color: lightblue;
+}
+}
+
+
+
+
+/*@media only screen and (min-width: 1200px){
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+        "header header header header"
+        " aside-left main main"
+        "aside-bottom aside-bottom aside-right"
+        " footer footer footer"
+    }
+
+    .right-pic {
+        width: 100%;
+    }
+    }
+    */
